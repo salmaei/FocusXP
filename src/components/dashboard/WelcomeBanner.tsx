@@ -14,7 +14,7 @@ export function WelcomeBanner({ userName, rank, rankChange, streak }: WelcomeBan
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/10 border border-primary/20 p-6 sm:p-8"
+      className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 border border-primary/20 p-6 sm:p-8"
     >
       {/* Background glow effects */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
@@ -47,10 +47,10 @@ export function WelcomeBanner({ userName, rank, rankChange, streak }: WelcomeBan
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.3, type: "spring" }}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/30"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-streak/20 border border-streak/30"
             >
-              <Flame className="w-5 h-5 text-secondary" />
-              <span className="font-display font-bold text-secondary">{streak} day streak</span>
+              <Flame className="w-5 h-5 text-streak" />
+              <span className="font-display font-bold text-streak">{streak} day streak</span>
             </motion.div>
           </div>
         </div>

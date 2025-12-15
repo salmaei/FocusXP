@@ -10,7 +10,7 @@ const focusModes = [
     description: "25 min study, 5 min break",
     points: 20,
     icon: Timer,
-    gradient: "from-primary to-primary/60",
+    gradient: "from-destructive to-destructive/60",
     recommended: true,
   },
   {
@@ -35,7 +35,7 @@ const focusModes = [
     description: "Sync with friends",
     points: 20,
     icon: Users,
-    gradient: "from-secondary to-secondary/60",
+    gradient: "from-primary to-primary/60",
     bonus: "+20 per friend",
   },
 ];
@@ -90,7 +90,7 @@ export function FocusModeCard() {
                       +{mode.points} pts
                     </span>
                     {mode.bonus && (
-                      <span className="px-2 py-1 rounded-lg bg-secondary/20 text-secondary text-xs">
+                      <span className="px-2 py-1 rounded-lg bg-accent/20 text-accent text-xs">
                         {mode.bonus}
                       </span>
                     )}

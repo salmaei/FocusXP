@@ -67,11 +67,11 @@ export default function Settings() {
             <div className="space-y-4 p-6 rounded-2xl bg-card border border-border">
               <div>
                 <label className="text-sm text-muted-foreground mb-1 block">Display Name</label>
-                <Input defaultValue="Alex Thompson" />
+                <Input defaultValue="User Doe" />
               </div>
               <div>
                 <label className="text-sm text-muted-foreground mb-1 block">Email</label>
-                <Input defaultValue="alex.thompson@university.edu" type="email" />
+                <Input defaultValue="user.doe@university.edu" type="email" />
               </div>
               <div>
                 <label className="text-sm text-muted-foreground mb-1 block">University</label>

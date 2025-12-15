@@ -17,12 +17,12 @@ interface Friend {
 }
 
 const mockFriends: Friend[] = [
-  { id: "1", name: "Mike Johnson", avatar: "MJ", status: "focusing", currentStreak: 12 },
-  { id: "2", name: "Emma Wilson", avatar: "EW", status: "online", currentStreak: 8 },
-  { id: "3", name: "Lisa Park", avatar: "LP", status: "online", currentStreak: 5, challengeReceived: true },
-  { id: "4", name: "Tom Davis", avatar: "TD", status: "offline", currentStreak: 3 },
-  { id: "5", name: "Kate Miller", avatar: "KM", status: "focusing", currentStreak: 15 },
-  { id: "6", name: "Ryan Taylor", avatar: "RT", status: "offline", currentStreak: 0 },
+  { id: "1", name: "Salma Ibrahim", avatar: "SI", status: "focusing", currentStreak: 12 },
+  { id: "2", name: "Zulfa Al Balushi", avatar: "ZB", status: "online", currentStreak: 8 },
+  { id: "3", name: "Ibtihal Al Busaidi", avatar: "IB", status: "online", currentStreak: 5, challengeReceived: true },
+  { id: "4", name: "Marwa Al Rumhi", avatar: "MR", status: "offline", currentStreak: 3 },
+  { id: "5", name: "Muthla Al Busaidi", avatar: "MB", status: "focusing", currentStreak: 15 },
+  { id: "6", name: "Sarrah Al Saadi", avatar: "SS", status: "offline", currentStreak: 0 },
 ];
 
 const statusColors = {
@@ -89,19 +89,19 @@ export default function Friends() {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="mb-6 p-4 rounded-xl bg-secondary/10 border border-secondary/30 flex items-center gap-4"
+              className="mb-6 p-4 rounded-xl bg-gradient-to-r from-destructive/10 to-destructive/30 border border-destructive/30 flex items-center gap-4"
             >
-              <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center">
-                <Swords className="w-5 h-5 text-secondary" />
+              <div className="w-10 h-10 rounded-xl bg-destructive/20 flex items-center justify-center">
+                <Swords className="w-5 h-5 text-destructive" />
               </div>
               <div className="flex-1">
                 <p className="font-medium">New Challenge!</p>
                 <p className="text-sm text-muted-foreground">
-                  Lisa Park challenged you to complete 3 Pomodoro sessions today (+15 bonus pts)
+                  Marwa Al Rumhi challenged you to complete 3 Pomodoro sessions today (+15 bonus pts)
                 </p>
               </div>
               <div className="flex gap-2">
-                <Button size="sm" variant="secondary">Accept</Button>
+                <Button size="sm" variant="destructive">Accept</Button>
                 <Button size="sm" variant="ghost">Decline</Button>
               </div>
             </motion.div>
@@ -141,8 +141,8 @@ export default function Friends() {
                           {statusLabels[friend.status]}
                         </span>
                         <span className="text-muted-foreground">•</span>
-                        <span className="text-secondary flex items-center gap-1">
-                          <Zap className="w-3 h-3" />
+                        <span className="text-streak flex items-center gap-1">
+                          <Zap className="w-3 h-3 text-streak" />
                           {friend.currentStreak} day streak
                         </span>
                       </div>

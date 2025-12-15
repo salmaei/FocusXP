@@ -42,7 +42,7 @@ const Index = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Banner */}
         <WelcomeBanner 
-          userName="Alex"
+          userName="User"
           rank={12}
           rankChange={3}
           streak={7}

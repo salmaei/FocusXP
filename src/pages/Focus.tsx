@@ -15,7 +15,7 @@ const modeConfigs = {
     breakTime: 5 * 60,
     points: 20,
     icon: Timer,
-    color: "primary",
+    color: "destructive",
   },
   "deep-focus": {
     name: "Deep Focus",
@@ -39,7 +39,7 @@ const modeConfigs = {
     breakTime: 5 * 60,
     points: 20,
     icon: Users,
-    color: "secondary",
+    color: "primary",
   },
 };
 

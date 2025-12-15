@@ -43,7 +43,7 @@ export function RewardsCard({ userPoints }: RewardsCardProps) {
     >
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <Gift className="w-5 h-5 text-secondary" />
+          <Gift className="w-5 h-5 text-success" />
           <h2 className="font-display font-bold text-lg">Redeem Rewards</h2>
         </div>
         <Button variant="ghost" size="sm">
@@ -63,24 +63,24 @@ export function RewardsCard({ userPoints }: RewardsCardProps) {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 + index * 0.1 }}
-              className={`p-4 rounded-xl border transition-all ${
+                className={`p-4 rounded-xl border transition-all ${
                 canRedeem 
-                  ? "bg-secondary/10 border-secondary/30 hover:border-secondary cursor-pointer" 
+                  ? "bg-success/10 border-success/30 hover:border-success cursor-pointer" 
                   : "bg-muted/30 border-border"
               }`}
             >
               <div className="flex items-center gap-3">
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                  canRedeem ? "bg-secondary/20" : "bg-muted"
+                  canRedeem ? "bg-success/20" : "bg-muted"
                 }`}>
-                  <reward.icon className={`w-5 h-5 ${canRedeem ? "text-secondary" : "text-muted-foreground"}`} />
+                  <reward.icon className={`w-5 h-5 ${canRedeem ? "text-success" : "text-muted-foreground"}`} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium truncate">{reward.name}</p>
                   <p className="text-xs text-muted-foreground">{reward.venue}</p>
                 </div>
                 <div className="text-right">
-                  <p className={`font-display font-bold ${canRedeem ? "text-secondary" : "text-muted-foreground"}`}>
+                  <p className={`font-display font-bold ${canRedeem ? "text-success" : "text-muted-foreground"}`}>
                     {reward.points} pts
                   </p>
                   {!canRedeem && reward.available && (
@@ -94,7 +94,7 @@ export function RewardsCard({ userPoints }: RewardsCardProps) {
               {!canRedeem && reward.available && (
                 <div className="mt-3 h-1.5 bg-muted rounded-full overflow-hidden">
                   <div 
-                    className="h-full bg-gradient-to-r from-secondary/50 to-secondary rounded-full transition-all"
+                    className="h-full bg-gradient-to-r from-success/50 to-success rounded-full transition-all"
                     style={{ width: `${progress}%` }}
                   />
                 </div>

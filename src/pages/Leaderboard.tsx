@@ -18,29 +18,30 @@ interface LeaderboardEntry {
 }
 
 const mockLeaderboard: LeaderboardEntry[] = [
-  { rank: 1, name: "Sarah Chen", avatar: "SC", points: 4250, change: 0 },
-  { rank: 2, name: "Mike Johnson", avatar: "MJ", points: 4120, change: 2 },
-  { rank: 3, name: "Emma Wilson", avatar: "EW", points: 3980, change: -1 },
-  { rank: 4, name: "David Kim", avatar: "DK", points: 3750, change: 1 },
-  { rank: 5, name: "Lisa Park", avatar: "LP", points: 3600, change: -2 },
-  { rank: 6, name: "James Lee", avatar: "JL", points: 3450, change: 0 },
-  { rank: 7, name: "Anna Brown", avatar: "AB", points: 3200, change: 3 },
-  { rank: 8, name: "Tom Davis", avatar: "TD", points: 3050, change: -1 },
+  { rank: 1, name: "Mutha Al Busaidi", avatar: "MB", points: 4250, change: 0 },
+  { rank: 2, name: "Michael Jackson", avatar: "MJ", points: 4120, change: 2 },
+  { rank: 3, name: "Salma Ibrahim", avatar: "SI", points: 3980, change: -1 },
+  { rank: 4, name: "Dunya Kamel", avatar: "DK", points: 3750, change: 1 },
+  { rank: 5, name: "Zulfa Al Balushi", avatar: "ZB", points: 3600, change: -2 },
+  { rank: 6, name: "John Lee", avatar: "JL", points: 3450, change: 0 },
+  { rank: 7, name: "Marwa Al Rumhi", avatar: "MR", points: 3200, change: 3 },
+  { rank: 8, name: "Abdullah Fakhr", avatar: "AF", points: 3050, change: -1 },
   { rank: 9, name: "Kate Miller", avatar: "KM", points: 2900, change: 0 },
-  { rank: 10, name: "Ryan Taylor", avatar: "RT", points: 2750, change: 2 },
+  { rank: 10, name: "Ibtihal Al Busaidi", avatar: "IB", points: 2750, change: 2 },
   { rank: 11, name: "Sophie Adams", avatar: "SA", points: 2600, change: -1 },
-  { rank: 12, name: "Alex Thompson", avatar: "AT", points: 2450, isCurrentUser: true, change: 3 },
+  { rank: 12, name: "User Doe", avatar: "UD", points: 2450, isCurrentUser: true, change: 3 },
   { rank: 13, name: "Chris White", avatar: "CW", points: 2300, change: -2 },
   { rank: 14, name: "Olivia Green", avatar: "OG", points: 2150, change: 1 },
   { rank: 15, name: "Daniel Harris", avatar: "DH", points: 2000, change: 0 },
 ];
 
 const friendsLeaderboard: LeaderboardEntry[] = [
-  { rank: 1, name: "Mike Johnson", avatar: "MJ", points: 4120, change: 0 },
-  { rank: 2, name: "Emma Wilson", avatar: "EW", points: 3980, change: 1 },
-  { rank: 3, name: "Alex Thompson", avatar: "AT", points: 2450, isCurrentUser: true, change: 0 },
-  { rank: 4, name: "Lisa Park", avatar: "LP", points: 2200, change: -2 },
-  { rank: 5, name: "Tom Davis", avatar: "TD", points: 1900, change: 1 },
+  { rank: 1, name: "Mutha Al Busaidi", avatar: "MB", points: 4120, change: 0 },
+  { rank: 2, name: "Salma Ibrahim", avatar: "SI", points: 3980, change: 1 },
+  { rank: 3, name: "User Doe", avatar: "UD", points: 2450, isCurrentUser: true, change: 0 },
+  { rank: 4, name: "Zulfa Al Balushi", avatar: "ZB", points: 2200, change: -2 },
+  { rank: 5, name: "Ibtihal Al Busaidi", avatar: "IB", points: 1900, change: 1 },
+  { rank: 6, name: "Marwa Al Rumhi", avatar: "MR", points: 1750, change: 0 },
 ];
 
 const getRankIcon = (rank: number) => {
